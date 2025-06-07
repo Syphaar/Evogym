@@ -1,4 +1,4 @@
-// import React from 'react'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo from "../../assets/Logo.png";
 
 const Footer = () => {
@@ -15,10 +15,12 @@ const Footer = () => {
             </div>
             <div className="mt-10 basis-1/4 md:mt-0">
                 <h4 className="font-bold text-lg">Links</h4>
-                <p className="mt-4">Home</p>
-                <p className="mt-4">Benefits</p>
-                <p className="mt-4">Our Classes</p>
-                <p className="mt-4">Contact Us</p>
+                <div className="flex flex-col">
+                    <AnchorLink href="#home" className="mt-4 cursor-pointer w-[23%]"><p>Home</p></AnchorLink>
+                    <AnchorLink href="#benefits" className="mt-4 cursor-pointer w-[28%]">Benefits</AnchorLink>
+                    <AnchorLink href="#ourclasses" className="mt-4 cursor-pointer w-[40%]">Our Classes</AnchorLink>
+                    <AnchorLink href="#contactus" className="mt-4 cursor-pointer w-[38%]">Contact Us</AnchorLink>
+                </div>
             </div>
             <div className="mt-10 basis-1/4 md:mt-0">
                 <h4 className="text-lg font-bold">Contact Us</h4>
@@ -32,4 +34,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

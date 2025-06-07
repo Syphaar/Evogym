@@ -1,5 +1,3 @@
-// import React from 'react'
-
 import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "../shared/ActionButton";
 import { SelectedPage } from "../shared/types";
@@ -14,7 +12,6 @@ import { motion } from "framer-motion";
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
-
 
 const Home = ({ setSelectedPage }: Props) => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -60,7 +57,7 @@ const Home = ({ setSelectedPage }: Props) => {
                     }}
                 >
                     <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
-                    <AnchorLink className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+                    <AnchorLink className="text-sm font-bold text-primary-500 hover:text-secondary-500"
                         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
                         href={`${SelectedPage.ContactUs}`}
                     >

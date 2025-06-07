@@ -1,8 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
 import { useEffect, useState } from "react";
 import Navbar from "./scene/navbar";
 import { SelectedPage } from "./scene/shared/types";
@@ -12,9 +7,7 @@ import OurClasses from "./scene/ourClasses";
 import ContactUs from "./scene/contactUs";
 import Footer from "./scene/footer";
 
-
 function App() {
-  // const [count, setCount] = useState(0)
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
   const [isTopOfPage, setIsTopOfPage ] = useState<boolean>(true);
 

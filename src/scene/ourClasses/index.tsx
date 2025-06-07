@@ -1,5 +1,3 @@
-// import React from 'react'
-
 import { SelectedPage } from "../shared/types";
 import type { ClassType } from "../shared/types";
 import image1 from "../../assets/image1.png";
