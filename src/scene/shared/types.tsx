@@ -9,7 +9,7 @@ export type SelectedPage = (typeof SelectedPage)[keyof typeof SelectedPage];
 
 
 export interface BenefitType {
-  icon: JSX.Element;
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
